@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/holo_green_light"
+    tools:context="net.ddns.dwaraka.yaftp.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4d6619"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Server Details..."
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Server Name"
+                android:textSize="20dp"
+                android:id="@+id/textViewServerName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextHostName"
+                android:hint="Host Name  ( IP Address )"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="60dp"
+                />
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Port (Default:21)"
+                android:ems="10"
+                android:id="@+id/editTextPort"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="Login details..."/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:id="@+id/editTextUsername"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="Password"
+                android:id="@+id/editTextPassword"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Storage Location Details..."
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary External Storage"
+                    android:id="@+id/radioButtonInternal"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="External SD Card"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/radioButtonExternal"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Default Remote Directory"
+                android:id="@+id/editTextRemoteDir"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

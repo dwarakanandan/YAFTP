@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to YAFTP!.."
+        android:id="@+id/textViewabout1"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:text="YAFTP is a sleek,powerful FTP client that establishes a connection between your android phone and a remote server,typically an FTP server. YAFTP client provides the dual-direction transfer of data and files between two devices over a TCP network or an Internet connection "
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Designed and developed by Dwarakanandan.B.M"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source code at github.com/dwarakanandan/yaftp"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+</ScrollView>

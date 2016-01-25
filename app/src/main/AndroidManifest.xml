@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.ddns.dwaraka.yaftp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="YAFTP"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="net.ddns.dwaraka.yaftp.ClientActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="net.ddns.dwaraka.yaftp.RemoteDownloadService" />
+        <service android:name="net.ddns.dwaraka.yaftp.RemoteUploadService" />
+        <service android:name="net.ddns.dwaraka.yaftp.UploadServiceHandler"/>
+
+        <activity android:name="net.ddns.dwaraka.yaftp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="net.ddns.dwaraka.yaftp.AddServerActivity" />
+        <activity android:name="net.ddns.dwaraka.yaftp.EditServerActivity" />
+
+        <activity android:name="net.ddns.dwaraka.yaftp.DummySendActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

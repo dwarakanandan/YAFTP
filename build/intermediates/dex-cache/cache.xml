@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/nandu/AndroidStudioProjects/YAFTP/app/commons-io-2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8f9395d66a19d0bd76dda40e9704b1965b78fcaa">
+        <dex dex="/home/nandu/AndroidStudioProjects/YAFTP/app/build/intermediates/pre-dexed/debug/commons-io-2.4_8509b993cbabf9cf64a786e4268701adbed6f69a.jar" />
+    </item>
+    <item
+        jar="/home/nandu/AndroidStudioProjects/YAFTP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/home/nandu/AndroidStudioProjects/YAFTP/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.0_0d6f28c4cdc4c066480ae4f14f5ed01b44da8ff4.jar" />
+    </item>
+    <item
+        jar="/home/nandu/AndroidStudioProjects/YAFTP/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/home/nandu/AndroidStudioProjects/YAFTP/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.0_846cb894a40e1caeef402ea28e5e55452273cb20.jar" />
+    </item>
+    <item
+        jar="/home/nandu/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/home/nandu/AndroidStudioProjects/YAFTP/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0_9cd0a0c37208f862b7c03d6e2e1ea22dc1ea0a56.jar" />
+    </item>
+    <item
+        jar="/home/nandu/AndroidStudioProjects/YAFTP/app/commons-net-3.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5e984db9554728564d58e90da5d90eff8ae8cf2d">
+        <dex dex="/home/nandu/AndroidStudioProjects/YAFTP/app/build/intermediates/pre-dexed/debug/commons-net-3.4_675228cfaa22be494c72657c051cd7c0f2389acb.jar" />
+    </item>
+    <item
+        jar="/home/nandu/AndroidStudioProjects/YAFTP/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/home/nandu/AndroidStudioProjects/YAFTP/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0_88ae111effdc7acbdd83e0ef7f73f94f0439c156.jar" />
+    </item>
+
+</items>

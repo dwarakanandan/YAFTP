@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/holo_green_light"
+    tools:context="net.ddns.dwaraka.yaftp.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4d6619"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/noitemsLinearLayout"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="Welcome to YAFTP!"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="Click on the (+) above to add a new Server!" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/placeholderLinearLayout"
+        android:layout_gravity="center">
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/gridView"
+            android:layout_gravity="center"
+            android:columnWidth="150dip"
+            android:gravity="center"
+            android:horizontalSpacing="10dip"
+            android:numColumns="auto_fit"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="40dip"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

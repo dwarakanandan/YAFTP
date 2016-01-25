@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/plus"
+        android:title="Create"
+        android:icon="@drawable/plus"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/trash"
+        android:title="Delete"
+        android:icon="@drawable/trash"
+        app:showAsAction="always"/>
+    <item android:id="@+id/download"
+        android:title="Download"
+        android:icon="@drawable/download"
+        app:showAsAction="always"/>
+    <item android:id="@+id/upload"
+        android:title="Upload"
+        android:icon="@drawable/upload"
+        app:showAsAction="always"/>
+    <item android:id="@+id/copyPaste"
+        android:title="Paste"
+        android:icon="@drawable/paste"
+        app:showAsAction="always"/>
+    <item android:id="@+id/cancelCopy"
+        android:title="Cancel"
+        android:icon="@drawable/cancel"
+        app:showAsAction="always"/>
+    <item android:id="@+id/movePaste"
+        android:title="Paste"
+        android:icon="@drawable/paste"
+        app:showAsAction="always"/>
+    <item android:id="@+id/cancelMove"
+        android:title="Cancel"
+        android:icon="@drawable/cancel"
+        app:showAsAction="always"/>
+    <item android:id="@+id/rename"
+        android:title="Rename"
+        app:showAsAction="never"/>
+    <item android:id="@+id/copy"
+        android:title="Copy"
+        app:showAsAction="never"/>
+    <item android:id="@+id/move"
+        android:title="Move"
+        app:showAsAction="never"/>
+    <item android:id="@+id/selectall"
+        android:title="Select all"
+        app:showAsAction="never"/>
+    <item android:id="@+id/clearselection"
+        android:title="Clear Selection"
+        app:showAsAction="never"/>
+</menu>
